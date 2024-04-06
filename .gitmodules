@@ -1,0 +1,3 @@
+[submodule "Demo.Users"]
+	path = Demo.Users
+	url = https://github.com/RyanCortino/Demo.Users.git
