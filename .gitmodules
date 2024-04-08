@@ -1,3 +1,6 @@
 [submodule "Demo.Users"]
 	path = Demo.Users
 	url = https://github.com/RyanCortino/Demo.Users.git
+[submodule "Demo.TodoLists"]
+	path = Demo.TodoLists
+	url = https://github.com/RyanCortino/Demo.TodoLists.git
