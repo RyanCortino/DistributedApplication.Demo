@@ -1,0 +1,180 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "DistributedApplication",
+	"ownedElements": [
+		{
+			"_type": "UMLSubsystem",
+			"_id": "AAAAAAGOtC+il3jP6QU=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Demo",
+			"ownedElements": [
+				{
+					"_type": "UMLSubsystem",
+					"_id": "AAAAAAGOstbPRXi/cWE=",
+					"_parent": {
+						"$ref": "AAAAAAGOtC+il3jP6QU="
+					},
+					"name": "AppHost",
+					"documentation": "An orchestrator project designed to connect and configure the different projects and services of your app. The orchestrator should be set as the Startup project"
+				},
+				{
+					"_type": "UMLSubsystem",
+					"_id": "AAAAAAGOstcOJHjEcg8=",
+					"_parent": {
+						"$ref": "AAAAAAGOtC+il3jP6QU="
+					},
+					"name": "ServiceDefaults",
+					"documentation": "A .NET Aspire shared project to manage configurations that are reused across the projects in your solution related to resilience, service discovery, and telemetry."
+				},
+				{
+					"_type": "UMLSubsystem",
+					"_id": "AAAAAAGOstOUBHi5RVg=",
+					"_parent": {
+						"$ref": "AAAAAAGOtC+il3jP6QU="
+					},
+					"name": "ApiGateway",
+					"documentation": "The API gateway handles requests in one of two ways. Some requests are simply proxied/routed to the appropriate service. It handles other requests by fanning out to multiple services."
+				}
+			]
+		},
+		{
+			"_type": "UMLSubsystem",
+			"_id": "AAAAAAGOtDAmvnjakAI=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Demo.TodoLists",
+			"ownedElements": [
+				{
+					"_type": "UMLSubsystem",
+					"_id": "AAAAAAGOtDCQC3jih/Y=",
+					"_parent": {
+						"$ref": "AAAAAAGOtDAmvnjakAI="
+					},
+					"name": "Domain"
+				},
+				{
+					"_type": "UMLSubsystem",
+					"_id": "AAAAAAGOtDCSknjmzac=",
+					"_parent": {
+						"$ref": "AAAAAAGOtDAmvnjakAI="
+					},
+					"name": "Infrastructure"
+				},
+				{
+					"_type": "UMLSubsystem",
+					"_id": "AAAAAAGOtDCUsXjqIqE=",
+					"_parent": {
+						"$ref": "AAAAAAGOtDAmvnjakAI="
+					},
+					"name": "Web"
+				},
+				{
+					"_type": "UMLSubsystem",
+					"_id": "AAAAAAGOtDCCNnjeWv0=",
+					"_parent": {
+						"$ref": "AAAAAAGOtDAmvnjakAI="
+					},
+					"name": "Application"
+				}
+			]
+		},
+		{
+			"_type": "UMLSubsystem",
+			"_id": "AAAAAAGOtC/n9njWasE=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Demo.Users",
+			"ownedElements": [
+				{
+					"_type": "UMLSubsystem",
+					"_id": "AAAAAAGOtDN6UXkLerI=",
+					"_parent": {
+						"$ref": "AAAAAAGOtC/n9njWasE="
+					},
+					"name": "Application"
+				},
+				{
+					"_type": "UMLSubsystem",
+					"_id": "AAAAAAGOtDN/gXkPs3Q=",
+					"_parent": {
+						"$ref": "AAAAAAGOtC/n9njWasE="
+					},
+					"name": "Domain"
+				},
+				{
+					"_type": "UMLSubsystem",
+					"_id": "AAAAAAGOtDOEgnkTWtA=",
+					"_parent": {
+						"$ref": "AAAAAAGOtC/n9njWasE="
+					},
+					"name": "Infrastructure"
+				},
+				{
+					"_type": "UMLSubsystem",
+					"_id": "AAAAAAGOtDOLWXkXoQw=",
+					"_parent": {
+						"$ref": "AAAAAAGOtC/n9njWasE="
+					},
+					"name": "Web"
+				}
+			]
+		},
+		{
+			"_type": "UMLSubsystem",
+			"_id": "AAAAAAGOtDRuf3katG0=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Demo.Desktop",
+			"ownedElements": [
+				{
+					"_type": "UMLSubsystem",
+					"_id": "AAAAAAGOtD2Y/Xk9p78=",
+					"_parent": {
+						"$ref": "AAAAAAGOtDRuf3katG0="
+					},
+					"name": "WinFormsUI",
+					"ownedElements": [
+						{
+							"_type": "UMLSubsystem",
+							"_id": "AAAAAAGOtEFTXnlE8I4=",
+							"_parent": {
+								"$ref": "AAAAAAGOtD2Y/Xk9p78="
+							},
+							"name": "Presenters"
+						},
+						{
+							"_type": "UMLSubsystem",
+							"_id": "AAAAAAGOtEG+aXlIf54=",
+							"_parent": {
+								"$ref": "AAAAAAGOtD2Y/Xk9p78="
+							},
+							"name": "Models"
+						},
+						{
+							"_type": "UMLSubsystem",
+							"_id": "AAAAAAGOtEI8znlMEmQ=",
+							"_parent": {
+								"$ref": "AAAAAAGOtD2Y/Xk9p78="
+							},
+							"name": "Views"
+						},
+						{
+							"_type": "UMLSubsystem",
+							"_id": "AAAAAAGOtDvbWHk4owM=",
+							"_parent": {
+								"$ref": "AAAAAAGOtD2Y/Xk9p78="
+							},
+							"name": "Controls"
+						}
+					]
+				}
+			]
+		}
+	]
+}
